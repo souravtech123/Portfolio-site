@@ -81,7 +81,7 @@ export default function Contact() {
       }
 
       setStatus("success");
-      setFeedbackMessage(data.message || "Message sent successfully!");
+      setFeedbackMessage(data.message || "Message received! I'll get back to you soon.");
       setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (err: any) {
       setStatus("error");
@@ -178,7 +178,7 @@ export default function Contact() {
                   Send a message
                 </h3>
                 <p className="mt-1 font-[family-name:var(--font-body)] text-xs text-white/60">
-                  Delivered directly to {email}
+                  Fill in the form below to send me a message.
                 </p>
 
                 {status === "success" ? (
@@ -305,7 +305,7 @@ export default function Contact() {
                         </>
                       ) : (
                         <>
-                          <span>Send to souravsuman846@gmail.com</span>
+                          <span>Send Message</span>
                           <Send className="h-4 w-4" />
                         </>
                       )}

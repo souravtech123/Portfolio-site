@@ -69,7 +69,7 @@ export default function ContactModal() {
       }
 
       setStatus("success");
-      setFeedbackMessage(data.message || "Message sent successfully!");
+      setFeedbackMessage(data.message || "Message received! I'll get back to you soon.");
       setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (err: any) {
       setStatus("error");
@@ -132,11 +132,7 @@ export default function ContactModal() {
                     Get in touch
                   </h2>
                   <p className="mt-1.5 text-sm text-[#566078]">
-                    Send a direct message to{" "}
-                    <span className="font-medium text-[#121A30]">
-                      souravsuman846@gmail.com
-                    </span>
-                    .
+                    Fill in the form and I&apos;ll get back to you as soon as possible.
                   </p>
                 </div>
 
